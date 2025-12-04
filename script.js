@@ -15,7 +15,8 @@ document.getElementById("signupForm").addEventListener("submit", async (e) => {
                 return alert("Password length must be greater than 6");
             }
         
-        const res = await axios.post("http://localhost:5000/api/signup", {
+        // const res = await axios.post("http://localhost:5000/api/signup", {
+        const res = await axios.post("https://ai-resume-backend-hazel.vercel.app/api/signup", {
             name,
             email,
             password
@@ -51,7 +52,8 @@ document.getElementById("loginForm").addEventListener("submit", async (e) => {
         let email = document.getElementById("loginEmail").value;
         let  password = document.getElementById("loginPassword").value;
 
-      const res =  await axios.post("/http://localhost:5000/api/login", {
+    //   const res =  await axios.post("/http://localhost:5000/api/login", {
+      const res =  await axios.post("https://ai-resume-backend-hazel.vercel.app/api/login", {
            email,
            password
         });

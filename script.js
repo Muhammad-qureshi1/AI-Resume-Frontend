@@ -16,7 +16,7 @@ document.getElementById("signupForm").addEventListener("submit", async (e) => {
             }
         
         // const res = await axios.post("http://localhost:5000/api/signup", {
-        const res = await axios.post("https://ai-resume-backend-hazel.vercel.app/api/signup", {
+        const res = await axios.post("ai-resume-backend-hazel.vercel.app/api/signup", {
             name,
             email,
             password
@@ -50,7 +50,7 @@ document.getElementById("loginForm").addEventListener("submit", async (e) => {
         let  password = document.getElementById("loginPassword").value;
 
     //   const res =  await axios.post("/http://localhost:5000/api/login", {
-      const res =  await axios.post("https://ai-resume-backend-hazel.vercel.app/api/login", {
+      const res =  await axios.post("ai-resume-backend-hazel.vercel.app/api/login", {
            email,
            password
         });

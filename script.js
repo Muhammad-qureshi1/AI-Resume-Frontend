@@ -24,10 +24,7 @@ document.getElementById("signupForm").addEventListener("submit", async (e) => {
             
         const data = res.data;
         console.log(res);
-        if (data.status === 505) {
-            alert(data.message);
-            return;
-        }
+        
         if (data.status === 400) {
             alert(data.message);
             return;
@@ -41,7 +38,7 @@ document.getElementById("signupForm").addEventListener("submit", async (e) => {
         console.log(err);
         alert("Error in Frontend Signup script file.")
     }
-})``
+})
 
 
 // =========== Login  ======== //
